@@ -29,7 +29,7 @@ case $choice in
     cd scripts/
     python3 v1_isolate-endpoint.py
     read -p "Press any key to continue.."
-    sleep 3
+    sleep 5
     clear
     echo "---------------------------------------- Trend Micro Vision One - API Tools ----------------------------------------";
     echo ' ';
@@ -48,7 +48,7 @@ case $choice in
     cd scripts/
     python3 v1_isolate-endpoint-name.py
     read -p "Press any key to continue.."
-    sleep 3
+    sleep 5
     clear
     echo "---------------------------------------- Trend Micro Vision One - API Tools ----------------------------------------";
     echo ' ';
@@ -67,7 +67,8 @@ case $choice in
     cd scripts/
     python3 v1-restore-endpoint-connection.py
     read -p "Press any key to continue.."
-    sleep 3
+    sleep 5
+    clear
     echo "---------------------------------------- Trend Micro Vision One - API Tools ----------------------------------------";
     echo ' ';
     echo "1. Isolate an Endpoint based on GUI"
@@ -85,7 +86,8 @@ case $choice in
     cd scripts/
     python3 v1-getResponseStatus.py
     read -p "Press any key to continue.."
-    sleep 3
+    sleep 5
+    clear
     echo "---------------------------------------- Trend Micro Vision One - API Tools ----------------------------------------";
     echo ' ';
     echo "1. Isolate an Endpoint based on GUI"
