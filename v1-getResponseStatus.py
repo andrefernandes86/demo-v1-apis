@@ -1,7 +1,7 @@
 import requests
 import json
 
-#tokenid = input('What is your VisionOne API Key?\n')
+tokenid = input('Please provide the VisionOne API Key?\n')
 
 url_base = 'https://api.xdr.trendmicro.com'
 url_path = '/v3.0/response/tasks'
