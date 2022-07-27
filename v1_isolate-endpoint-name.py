@@ -1,7 +1,7 @@
 import requests
 import json
 
-#tokenid = input('What is your VisionOne API Key?\n')
+tokenid = input('Please provide the VisionOne API Key?\n')
 endpointname = input('What is the Endpoint Name?\n')
 description2 = input('What is the reason why you are isolating this endpoint?\n')
 #agentid = input('What is the Agent GUID?\n')
