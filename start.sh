@@ -5,7 +5,6 @@ echo ' ';
 echo ' Please, provide the Vision One API Key: ';
 read tokenid
 echo ' ';
-echo "--------------------------------------------------------------------------------------------------------------------";
 sleep 5
 clear
 
@@ -35,7 +34,7 @@ case $choice in
   # Option 1
   1)  echo "You have selected the option 1"
     clear
-    echo '--------------------------'  
+    echo '--------------------------'
     cd scripts/
     python3 v1_isolate-endpoint.py
     read -p "Press any key to continue.."
@@ -44,7 +43,8 @@ case $choice in
   # Option 2
   2)  echo "You have selected the option 2"
     clear
-    echo '---------------------------'  
+    echo '---------------------------'
+    cd scripts/
     python3 v1_isolate-endpoint-name.py
     read -p "Press any key to continue.."
     sleep 3
@@ -53,7 +53,8 @@ case $choice in
     # Option 3
   3)  echo "You have selected the option 3"
     clear
-    echo '-----------------------------------'  
+    echo '-----------------------------------'
+    cd scripts/
     python3 v1-getResponseStatus.py
     read -p "Press any key to continue.."
     sleep 3
@@ -61,7 +62,8 @@ case $choice in
   # Option 4
   4)  echo "You have selected the option 4"
     clear
-    echo '-----------------------------------'  
+    echo '-----------------------------------'
+    cd scripts/
     python3 v1-restore-endpoint-connection.py
     read -p "Press any key to continue.."
     sleep 3
