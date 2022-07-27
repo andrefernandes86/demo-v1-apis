@@ -6,3 +6,4 @@ RUN pip install requests
 RUN pip install ldap3
 RUN mkdir scripts
 COPY *.py scripts/
+ENTRYPOINT ["sh", "./start.sh"]
