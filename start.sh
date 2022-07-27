@@ -65,7 +65,7 @@ case $choice in
     clear
     echo '-----------------------------------'
     cd scripts/
-    python3 v1-getResponseStatus.py
+    python3 v1-restore-endpoint-connection.py
     read -p "Press any key to continue.."
     sleep 3
     echo "---------------------------------------- Trend Micro Vision One - API Tools ----------------------------------------";
@@ -83,7 +83,7 @@ case $choice in
     clear
     echo '-----------------------------------'
     cd scripts/
-    python3 v1-restore-endpoint-connection.py
+    python3 v1-getResponseStatus.py
     read -p "Press any key to continue.."
     sleep 3
     echo "---------------------------------------- Trend Micro Vision One - API Tools ----------------------------------------";
