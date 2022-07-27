@@ -4,7 +4,7 @@ clear
 # Menu Options
 echo "---------------------------------------- Trend Micro Vision One - API Tools ----------------------------------------";
 echo ' ';
-echo "1. Isolate an Endpoint based on GUI"
+echo "1. Isolate an Endpoint based on GUID"
 echo "2. Isolate an Endpoint based on Hostname"
 echo "3. Restore the connection of an Isolated Endpoint"
 echo "4. Check the Response Status"
