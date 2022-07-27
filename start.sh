@@ -19,11 +19,9 @@ echo "1. Isolate an Endpoint based on GUI"
 echo "2. Isolate an Endpoint based on Hostname"
 echo "3. Restore the connection of an Isolated Endpoint"
 echo "4. Check the Response Status"
-echo "5. List the latest detections from -Workbench- menu"
-echo "6. Get the details of an specific Workbench ID"
-echo "7. Install Docker "
-echo "8. Exit from menu "
-echo -n "Enter your menu choice [1-8]: "
+echo "5. Exit from menu "
+echo "--------------------------------------------------------------------------------------------------------------------";
+echo -n "Enter your menu choice [1-4]: "
 
 # Preparing the Application 
 while :
