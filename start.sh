@@ -26,7 +26,7 @@ case $choice in
   1)  echo "You have selected the option 1"
     clear
     echo '--------------------------'
-    cd scripts
+    #cd scripts
     python3 v1_isolate-endpoint.py
     read -p "Press any key to continue.."
     sleep 5
@@ -45,7 +45,7 @@ case $choice in
   2)  echo "You have selected the option 2"
     clear
     echo '---------------------------'
-    cd scripts
+    #cd scripts
     python3 v1_isolate-endpoint-name.py
     read -p "Press any key to continue.."
     sleep 5
@@ -64,7 +64,7 @@ case $choice in
   3)  echo "You have selected the option 3"
     clear
     echo '-----------------------------------'
-    cd scripts
+    #cd scripts
     python3 v1-restore-endpoint-connection.py
     read -p "Press any key to continue.."
     sleep 5
@@ -83,7 +83,7 @@ case $choice in
   4)  echo "You have selected the option 4"
     clear
     echo '-----------------------------------'
-    cd scripts
+    #cd scripts
     python3 v1-getResponseStatus.py
     read -p "Press any key to continue.."
     sleep 5
