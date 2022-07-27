@@ -15,11 +15,11 @@ query_params = {}
 headers = {'Authorization': 'Bearer ' + token,
     'Content-Type': 'application/json;charset=utf-8'}
 
-body = [{'agentGuid': agentid,
-     'description': description1}]
+#body = [{'agentGuid': agentid,
+#     'description': description1}]
 
-#body = [{'description': description2,
-#     'endpointName': endpointname}]
+body = [{'description': description2,
+     'endpointName': endpointname}]
 
 r = requests.post(url_base + url_path, params=query_params, headers=headers, json=body)
 
