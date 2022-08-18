@@ -8,7 +8,8 @@ echo "1. Isolate an Endpoint based on GUID"
 echo "2. Isolate an Endpoint based on Hostname"
 echo "3. Restore the connection of an Isolated Endpoint"
 echo "4. Check the Response Status"
-echo "5. Exit from menu "
+echo "5. Add an IOC to the SO list"
+echo "6. Exit from menu "
 echo ' ';
 echo "--------------------------------------------------------------------------------------------------------------------";
 echo -n "Enter your menu choice [1-5]: "
@@ -38,7 +39,8 @@ case $choice in
     echo "2. Isolate an Endpoint based on Hostname"
     echo "3. Restore the connection of an Isolated Endpoint"
     echo "4. Check the Response Status"
-    echo "5. Exit from menu "
+    echo "5. Add an IOC to the SO list"
+    echo "6. Exit from menu "
     echo ' ';
     echo "--------------------------------------------------------------------------------------------------------------------";
     echo "";;
@@ -58,11 +60,12 @@ case $choice in
     echo "2. Isolate an Endpoint based on Hostname"
     echo "3. Restore the connection of an Isolated Endpoint"
     echo "4. Check the Response Status"
-    echo "5. Exit from menu "
+    echo "5. Add an IOC to the SO list"
+    echo "6. Exit from menu "
     echo ' ';
     echo "--------------------------------------------------------------------------------------------------------------------";
     echo "";;
-    # Option 3
+  # Option 3
   3)  echo "You have selected the option 3"
     clear
     echo '-----------------------------------'
@@ -78,9 +81,10 @@ case $choice in
     echo "2. Isolate an Endpoint based on Hostname"
     echo "3. Restore the connection of an Isolated Endpoint"
     echo "4. Check the Response Status"
-    echo "5. Exit from menu "
+    echo "5. Add an IOC to the SO list"
+    echo "6. Exit from menu "
     echo ' ';
-    echo "--------------------------------------------------------------------------------------------------------------------";    
+    echo "--------------------------------------------------------------------------------------------------------------------"; 
     echo "";;
   # Option 4
   4)  echo "You have selected the option 4"
@@ -98,11 +102,33 @@ case $choice in
     echo "2. Isolate an Endpoint based on Hostname"
     echo "3. Restore the connection of an Isolated Endpoint"
     echo "4. Check the Response Status"
-    echo "5. Exit from menu "
+    echo "5. Add an IOC to the SO list"
+    echo "6. Exit from menu "
     echo ' ';
-    echo "--------------------------------------------------------------------------------------------------------------------";    
+    echo "--------------------------------------------------------------------------------------------------------------------"; 
     echo "";;
-  5)  echo "Quitting ..."
+  # Option 5
+  5)  echo "You have selected the option 5"
+    clear
+    echo '-----------------------------------'
+    cd scripts
+    clear
+    python3 v1-solist.py
+    read -p "Press any key to continue.."
+    sleep 5
+    clear
+    echo "---------------------------------------- Trend Micro Vision One - API Tools ----------------------------------------";
+    echo ' ';
+    echo "1. Isolate an Endpoint based on GUID"
+    echo "2. Isolate an Endpoint based on Hostname"
+    echo "3. Restore the connection of an Isolated Endpoint"
+    echo "4. Check the Response Status"
+    echo "5. Add an IOC to the SO list"
+    echo "6. Exit from menu "
+    echo ' ';
+    echo "--------------------------------------------------------------------------------------------------------------------"; 
+    echo "";; 
+  6)  echo "Quitting ..."
     echo ' '
       exit;;
   
