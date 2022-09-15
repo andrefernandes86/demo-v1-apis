@@ -8,7 +8,7 @@ url_path = '/v2.0/xdr/threatintel/suspiciousObjects'
 tokenid = input('Please provide the VisionOne API Key?\n')
 typeid = input('What kind of IOC do you want to add to the SO list? (ip, url, sha1)\n')
 valueid = input('What is the IOC do you want to add to the SO list?\n')
-scanActionid = input('What action do you want to define as a reponse anytime this IOC is detected by the Trend Micro solutions?\n')
+scanActionid = input('What action do you want to define as a reponse anytime this IOC is detected by the Trend Micro solutions (block or log)?\n')
 riskLevelid = input('How do you classify this IOC? If High-Risk, plase use "high", if Medium-Risk, use "medium", and for Low-Risk, use "low".\n')
 
 query_params = {}
